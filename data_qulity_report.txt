@@ -1,0 +1,60 @@
+records/rows count: 5512903
+columns count: 35
+duplicate count: 0
+
+null count: 
+null count each col {'carrier_code': 0, 'flight_number': 0, 'origin_airport': 0, 'destination_airport': 0, 
+'date': 0, 'scheduled_elapsed_time': 0, 'tail_number': 13556, 'departure_delay': 0, 'arrival_delay': 0, 
+'delay_carrier': 0, 'delay_weather': 0, 'delay_national_aviation_system': 0, 'delay_security': 0,
+ 'delay_late_aircarft_arrival': 0, 'cancelled_code': 0, 'year': 0, 'month': 0, 'day': 0, 'weekday': 0, 
+ 'scheduled_departure_dt': 0, 'scheduled_arrival_dt': 0, 'actual_departure_dt': 82715, 'actual_arrival_dt': 88642, 
+ 'station_x': 2088, 'hourlydrybulbtemperature_x': 2088, 'hourlyprecipitation_x': 10029, 'hourlystationpressure_x': 2088, 
+ 'hourlyvisibility_x': 2088, 'hourlywindspeed_x': 2088, 'station_y': 2091, 'hourlydrybulbtemperature_y': 2091, 'hourlyprecipitation_y': 10031, 
+ 'hourlystationpressure_y': 2091, 'hourlyvisibility_y': 2091, 'hourlywindspeed_y': 2091}
+
+
+
+
+invalid values checks (business rules) 
+- arrival_delay less than -200    count: 0                                                
+- hourlyvisibility_x less than 0  count: 0
+- hourlywindspeed_x less than 0   count: 0  
+
+
+
+schema:
+ |-- carrier_code: string (nullable = true)
+ |-- flight_number: long (nullable = true)
+ |-- origin_airport: string (nullable = true)
+ |-- destination_airport: string (nullable = true)
+ |-- date: string (nullable = true)
+ |-- scheduled_elapsed_time: long (nullable = true)
+ |-- tail_number: string (nullable = true)
+ |-- departure_delay: long (nullable = true)
+ |-- arrival_delay: long (nullable = true)
+ |-- delay_carrier: long (nullable = true)
+ |-- delay_weather: long (nullable = true)
+ |-- delay_national_aviation_system: long (nullable = true)
+ |-- delay_security: long (nullable = true)
+ |-- delay_late_aircarft_arrival: long (nullable = true)
+ |-- cancelled_code: string (nullable = true)
+ |-- year: long (nullable = true)
+ |-- month: long (nullable = true)
+ |-- day: long (nullable = true)
+ |-- weekday: long (nullable = true)
+ |-- scheduled_departure_dt: string (nullable = true)
+ |-- scheduled_arrival_dt: string (nullable = true)
+ |-- actual_departure_dt: string (nullable = true)
+ |-- actual_arrival_dt: string (nullable = true)
+ |-- station_x: double (nullable = true)
+ |-- hourlydrybulbtemperature_x: double (nullable = true)
+ |-- hourlyprecipitation_x: double (nullable = true)
+ |-- hourlystationpressure_x: double (nullable = true)
+ |-- hourlyvisibility_x: double (nullable = true)
+ |-- hourlywindspeed_x: double (nullable = true)
+ |-- station_y: double (nullable = true)
+ |-- hourlydrybulbtemperature_y: double (nullable = true)
+ |-- hourlyprecipitation_y: double (nullable = true)
+ |-- hourlystationpressure_y: double (nullable = true)
+ |-- hourlyvisibility_y: double (nullable = true)
+ |-- hourlywindspeed_y: double (nullable = true)
